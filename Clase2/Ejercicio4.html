@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Imagen</title>
+</head>
+
+<body>
+    <h1>Mapa de Imagen Interactiva</h1>
+    <p>Haz clicl en las diferentes áreas</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uLYwsfqtf-Ax5N48y1w3J7IA07XxU-eGVA&s" alt="Area" usemap="#area" width="600" height="400">
+    <map name="area" id="areas">
+        <area shape="rect" coords="0,0,200,400" alt="area1" href="https://www.isepceu.es/">
+        <area shape="circle" coords="337,300,44"  alt="area2" href="https://www.w3schools.com/">
+        <area shape="rect" coords="400,0,600,400" alt="area3" href="javascript:mensajeArea3();">
+
+    </map>
+    <script>
+        function mensajeArea3(){
+            alert("Has hecho click en el Ára 3");
+
+
+        }
+    </script>
+</body>
+</html>
