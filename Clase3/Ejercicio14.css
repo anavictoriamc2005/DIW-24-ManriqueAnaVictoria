@@ -1,0 +1,17 @@
+h1{
+    font-size: 24pt;
+}
+p{
+    font-size: 15pt;
+}
+.descripcion {
+    width:350px;
+    height: 200px;
+    border: 2mm solid grey;
+    padding: 10pt;
+}
+.imagen{
+    width: 2in;
+    height: 2in;
+    border-radius: 50%;
+}

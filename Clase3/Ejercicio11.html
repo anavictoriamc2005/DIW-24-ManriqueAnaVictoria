@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+</head>
+<body>
+    <section>
+        <!-- Imagen 1 -->
+        <div id="paisaje" class="imagen-contenedor" data-imagen-id="paisaje" data-descripcion="Hermoso paisaje con montañas." tabindex="1" role="alert" aria-label="Imagen de un paisaje">
+            <img src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg" title="Hermoso paisaje con montañas">
+        </div>
+
+        <!-- Imagen 2 -->
+        <div id="lago" class="imagen-contenedor" data-imagen-id="lago" data-descripcion="Lago pequeño con bote." tabindex="2" role="alert" aria-label="Imagen de un lago con bote">
+            <img src="https://bargainfotos.com/blog/wp-content/uploads/2022/07/beautiful-shot-of-small-lake-with-wooden-rowboat-in-focus-and-breathtaking-clouds-in-the-sky.jpg" title="Lago pequeño con bote">
+        </div>
+
+        <!-- Imagen 3 -->
+        <div id="montaña" class="imagen-contenedor" data-imagen-id="montaña" data-descripcion="Montaña." tabindex="3" role="alert" aria-label="Imagen de una montaña">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" title="Montaña">
+        </div>
+    </section>
+
+    <!-- Cuadro de diálogo (diálogo de imagen grande) -->
+    <dialog id="dialogo">
+        <div id="dialogContent">
+            <img id="imagen-dialogo" src="" alt="Imagen ampliada">
+            <p id="descripcion-imagen"></p>
+            <button id="cerrar-dialogo">Cerrar</button>
+        </div>
+    </dialog>
+
+    <script>
+        // Seleccionamos todos los contenedores de imágenes
+        const contenedoresImagen = document.querySelectorAll('.imagen-contenedor');
+        const dialogo = document.getElementById('dialogo');
+        const imagenDialogo = dialogo.querySelector('img');
+        const descripcionDialogo = document.getElementById('descripcion-imagen');
+        const botonCerrar = document.getElementById('cerrar-dialogo');
+
+        // Función para abrir el diálogo con la imagen seleccionada
+        function abrirDialogo(event) {
+            const contenedor = event.currentTarget;
+            const imagen = contenedor.querySelector('img');
+            const srcImagen = imagen.src;
+            const descripcion = contenedor.dataset.descripcion;
+
+            imagenDialogo.src = srcImagen;
+            imagenDialogo.alt = imagen.alt;
+            descripcionDialogo.textContent = descripcion;
+
+            dialogo.showModal();
+        }
+
+        // Añadimos eventos a cada contenedor de imagen
+        contenedoresImagen.forEach(contenedor => {
+            contenedor.addEventListener('click', abrirDialogo);
+            contenedor.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    abrirDialogo(event);
+                }
+            });
+        });
+
+        // Evento para cerrar el diálogo
+        botonCerrar.addEventListener('click', function() {
+            dialogo.close();
+        });
+    </script>
+</body>
+</html>
