@@ -1,0 +1,93 @@
+:root {
+    --color-primario: #007BFF;
+    --color-secundario: #6C757D;
+    --color-fondo: #F8F9FA;
+    --color-texto: #212529;
+    --espacio-base: 16px;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: Arial, sans-serif;
+    color:var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+}
+
+.perfil-tarjeta {
+    width: 300px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: var(--espacio-base);
+    margin: 20px auto;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.perfil-tarjeta:hover {
+    background-color: var(--color-fondo);
+}
+
+.perfil-imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-nombre {
+    font-size: 24px;
+    color: var(--color-primario);
+    margin: var(--espacio-base) 0;
+    position: relative;
+}
+
+.perfil-nombre::before {
+    content: '👲 ';
+}
+
+.perfil-bio {
+    font-size: 16px;
+    color: var(--color-texto);
+    margin-bottom: var(--espacio-base);
+    text-align: justify;
+}
+
+.perfil-bio::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.perfil-redes a {
+    margin: 0 10px;
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+.perfil-redes a:hover {
+    text-decoration: underline;
+}
+
+.perfil-boton {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.perfil-boton:active {
+    background-color: var(--color-secundario);
+}
+
+.perfil-boton::after {
+    content: '➡️ ';
+    font-weight: bold;
+}
