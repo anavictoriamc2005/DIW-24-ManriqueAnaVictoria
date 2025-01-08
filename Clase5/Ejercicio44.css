@@ -1,0 +1,11 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 1px;
+}
+ 
+.celda {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}

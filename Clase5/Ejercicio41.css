@@ -1,0 +1,28 @@
+.contenedor{
+  display: flex;
+  
+}
+.titulo1{
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    flex-grow: 1;
+}
+.titulo2{
+    background-color:lightgrey;
+    color: white;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    flex-grow: 2;
+}
+.titulo3{
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    flex-grow: 1;
+}

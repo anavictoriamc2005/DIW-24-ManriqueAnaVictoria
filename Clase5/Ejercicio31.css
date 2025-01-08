@@ -1,0 +1,46 @@
+.encabezado{
+    color: white;
+    background-color:blue;
+    text-align: center;
+    padding: 10px;
+}
+.seccion1{
+    padding-left: 40px;
+    background-color: lightgrey;
+    width: 900px;
+    
+
+}
+.seccion2{
+    padding-left: 40px;
+    background-color: lightgrey;
+    width: 900px;
+    
+
+}
+
+.seccion3{
+    padding-left: 40px;
+    background-color: lightgrey;
+    width: 900px;
+}
+.menu{
+    border: 1px solid black;
+    position: absolute;
+    top:20px;
+    right:20px;
+    background-color: aliceblue;
+}
+ 
+.flotante{
+    background-color: brown;
+    position: relative;
+    color:white;
+    left:80%;
+
+
+}
+    
+
+
+

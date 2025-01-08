@@ -1,0 +1,57 @@
+body{
+    position: sticky;
+}
+.banner{
+    text-align: center;
+    background-color: lightblue;
+    color: blue;
+    padding: 20px;
+
+}
+.tarjeta1{
+    background-color: lightgrey;
+    width: 90px;
+    border-radius: 1rem;
+    margin-top: 20px;
+    display: flex;
+    float: inline-start;
+    gap:20px;
+   
+
+
+    
+
+}
+.tarjeta2{
+    background-color: lightgrey;
+    width: 90px;
+    border-radius: 1rem;
+    margin-top: 20px;
+    display: flex;
+    z-index: -1;
+    padding-right: 20px;
+    gap:20px;
+
+
+    
+
+    
+
+}
+
+.tarjeta3{
+    background-color: lightgrey;
+    width: 90px;
+    border-radius: 1rem;
+    margin-top: 20px;
+    display: flex;
+
+    
+
+}
+.contenido{
+    border: 1px solid black;
+}
+.contenido h1{
+    background-color: greenyellow;
+}
