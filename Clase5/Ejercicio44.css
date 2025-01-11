@@ -1,11 +1,18 @@
+/* Estilo para el contenedor principal */
 .contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    gap: 1px;
+    display: grid; /* Define que el contenedor utiliza el modelo de diseño en cuadrícula (grid). */
+    grid-template-columns: repeat(3, 150px); /* Establece que el grid tendrá tres columnas, cada una con un ancho fijo de 150px. */
+    grid-template-rows: repeat(3, 150px); /* Establece que el grid tendrá tres filas, cada una con una altura fija de 150px. */
+    gap: 1px; /* Define un espacio de 1px entre las celdas del grid. */
+    justify-content: center; /* Centra el grid horizontalmente dentro de su contenedor padre. */
 }
- 
-.celda {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 10px;
+
+/* Estilo para los elementos hijos pares del contenedor */
+.contenedor div:nth-child(even) {
+    background-color: rgb(42, 164, 201); /* Aplica un color de fondo azul a los elementos hijos con índices pares. */
+}
+
+/* Estilo para los elementos hijos impares del contenedor */
+.contenedor div:nth-child(odd) {
+    background-color: rgb(224, 35, 35); /* Aplica un color de fondo rojo a los elementos hijos con índices impares. */
 }

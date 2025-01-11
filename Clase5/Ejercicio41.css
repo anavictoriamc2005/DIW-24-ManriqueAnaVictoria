@@ -16,7 +16,7 @@
     width: 500px;
     height: 500px;
     text-align: center;
-    flex-grow: 2;
+    flex-grow: 10;
 }
 .titulo3{
     background-color: black;
