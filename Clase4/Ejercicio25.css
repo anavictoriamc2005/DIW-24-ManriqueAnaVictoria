@@ -1,0 +1,43 @@
+:root {
+    --color-primario: #007BFF;
+    --color-secundario: #6C757D;
+    --color-fondo: #F8F9FA;
+    --color-texto: #212529;
+    --espacio-base: 16px;
+    --color-agotado: red;
+}
+
+.categoria:nth-child(even) {
+    background-color: var(--color-primario);
+}
+
+.lista-productos:nth-child(odd) {
+    background-color: var(--color-secundario);
+}
+
+.agotado {
+    color: var(--color-agotado);
+    font-weight: bold;
+}
+
+.producto-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto-item::before {
+    content: "El producto está nuevo";
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.producto-item::after {
+    content: "El producto está agotado";
+    font-style: italic;
+    display: block;
+    margin-top: 10px;
+}
+
+.primero::first-letter {
+    text-decoration: underline;
+}

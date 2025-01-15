@@ -1,0 +1,13 @@
+/* Estilo para el enlace y el icono */
+.download-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+.download-link img {
+            margin-right: 10px; /* Espacio entre el icono y el texto */
+            width: 24px; /* Tamaño del icono */
+            height: 24px;
+        }

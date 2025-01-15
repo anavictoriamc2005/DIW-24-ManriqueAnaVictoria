@@ -1,0 +1,38 @@
+
+.imagen1{
+    width: 30vmax;
+    height: 200px;
+    margin: 1rem;
+    border: 0.5cm solid black;
+    display:flex;
+    background-image: url("https://dubois192.wordpress.com/wp-content/uploads/2016/04/analitica.jpg?w=640");
+    display:inline-block;
+}
+.imagen2{
+    width: 30vmax;
+    height: 200px;
+    margin: 1rem;
+    border: 0.5cm solid black;
+    display:inline-block;
+    background-image: url("https://conceptodefinicion.de/wp-content/uploads/2019/08/Inform%C3%A1tica-.jpg");
+   
+}
+.imagen3{
+    width: 30vmax;
+    height: 200px;
+    margin: 1rem;
+    border: 0.5cm solid black;
+    display:flex;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7IRPZgZvWYn_MU-f282E3WixJAz9jwrBKOClfwmGzZvWGUbSPBVPPNzLD0r_7f3jUTU&usqp=CAU");
+    display:inline-block;
+}
+.imagen4{
+    width: 30vmax;
+    height: 200px;
+    margin: 1rem;
+    border: 0.5cm solid black;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkJy8kq4whTxGM0yYbE3XIVisLWS9mYlqH5KqmfP3jrC7M71kUByVtDNRwVYec_UzcgbADH75kRjRnT630J48xmLViWtTtozInFHSTydCwQ4vlc3d76TcLANCqqgnxiKCB82dFflpKR24N/s1600/brain-on-chip-main-480x321.jpg");
+    display:inline-block;
+}
+
+

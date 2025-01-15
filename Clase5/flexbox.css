@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-grow,
+.flex-shrink,
+.flex-basis {
+    display: flex;
+    gap: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.red {
+    background-color: #FF5733;
+}
+
+.blue {
+    background-color: #3357FF;
+}
+
+.green {
+    background-color: #33FF57;
+}
+
+/* Specific flexbox rules */
+.flex-grow .box {
+    flex-grow: 1;
+}
+
+.flex-shrink .box {
+    flex-shrink: 1;
+}
+
+.flex-basis .box {
+    flex-basis: 100px;
+}

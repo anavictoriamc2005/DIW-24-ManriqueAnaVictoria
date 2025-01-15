@@ -1,0 +1,34 @@
+body{
+    padding: 20px;
+}
+.contenedor{
+    display: flex;
+    
+}
+.titulo1{
+    background-color: green;
+    color: white;
+    width: 500px;
+    height: 500px;
+    padding: 24px;
+       
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titulo2{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+.titulo3{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+ 

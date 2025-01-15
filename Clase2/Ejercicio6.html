@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <!-- IMAGEN PARA PANTALLAS DE 800PX O MÁS -->
+        <source media="(min-width:800px)" srcset="https://placehold.co/800x600">
+        
+        <!-- IMAGEN PARA PANTALLAS ENTRE 500PX Y 799PX -->
+        <source media="(min-width:500px) and (max-width:799px)" srcset="https://placehold.co/600x400">
+        
+        <!-- IMAGEN PARA PANTALLAS MENOR A 500PX -->
+        <source media="(max-width:499px)" srcset="https://placehold.co/400x300">
+
+        <!-- Mensaje para navegadores que no soportan <picture> -->
+        <p>Tu navegador no soporta &lt;picture&gt;, se mostrará una imagen por defecto.</p>
+
+        <!-- Imagen de respaldo para navegadores antiguos que no soportan <picture> -->
+        <img src="https://placehold.co/400x300" alt="Imagen de respaldo">
+    </picture>
+</body>
+</html>

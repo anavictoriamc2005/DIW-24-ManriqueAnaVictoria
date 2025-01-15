@@ -1,0 +1,21 @@
+/* Establece la imagen de fondo para toda la página */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://st2.depositphotos.com/1755195/11794/i/450/depositphotos_117944176-stock-photo-blue-abstract-polygonal-mosaic-background.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título */
+h1 {
+    color: lightblue;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para mejorar la legibilidad */
+}

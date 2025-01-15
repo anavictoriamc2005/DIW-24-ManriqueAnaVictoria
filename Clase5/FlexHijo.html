@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="FlexHijo.css">
+  <title>Propiedades de FlexBox Hijos</title>
+</head>
+<body>
+  <h1>Propiedades de FlexBox Hijos Ejemplo de cada uno de ellos:</h1>
+
+  <!-- order -->
+  <div class="title">order</div>
+  <div class="flex-container">
+    <div class="box" style="order: 2;">1</div>
+    <div class="box" style="order: 1;">2</div>
+    <div class="box" style="order: 3;">3</div>
+  </div>
+
+  <!-- flex-grow -->
+  <div class="title">flex-grow</div>
+  <div class="flex-container" style="width: 300px;">
+    <div class="box" style="flex-grow: 1;">1</div>
+    <div class="box" style="flex-grow: 2;">2</div>
+    <div class="box" style="flex-grow: 1;">3</div>
+  </div>
+
+  <!-- flex-shrink -->
+  <div class="title">flex-shrink</div>
+  <div class="flex-container" style="width: 150px;">
+    <div class="box" style="flex-shrink: 1;">1</div>
+    <div class="box" style="flex-shrink: 2;">2</div>
+    <div class="box" style="flex-shrink: 1;">3</div>
+  </div>
+
+  <!-- flex-basis -->
+  <div class="title">flex-basis</div>
+  <div class="flex-container">
+    <div class="box" style="flex-basis: 50px;">1</div>
+    <div class="box" style="flex-basis: 100px;">2</div>
+    <div class="box" style="flex-basis: 75px;">3</div>
+  </div>
+
+  <!-- flex -->
+  <div class="title">flex (short-hand for flex-grow, flex-shrink, flex-basis)</div>
+  <div class="flex-container" style="width: 300px;">
+    <div class="box" style="flex: 1 1 auto;">1</div>
+    <div class="box" style="flex: 2 1 100px;">2</div>
+    <div class="box" style="flex: 1 2 auto;">3</div>
+  </div>
+
+  <!-- align-self -->
+  <div class="title">align-self</div>
+  <div class="flex-container" style="height: 150px;">
+    <div class="box" style="align-self: flex-start;">1</div>
+    <div class="box" style="align-self: center;">2</div>
+    <div class="box" style="align-self: flex-end;">3</div>
+  </div>
+</body>
+</html>

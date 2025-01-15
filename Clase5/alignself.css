@@ -1,0 +1,68 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    
+}
+.flex {
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+.auto{
+    height: 20%;;
+    display: flex;
+    align-self: auto;
+    border: 2px solid black;
+}
+.stretch{
+    height: 20%;
+    display: flex;
+    align-self: stretch;
+    border: 2px solid black;
+}
+.flex-start{
+    height: 20%;
+    display: flex;
+    align-self: flex-start;
+    border: 2px solid black;
+}
+.flex-end{
+    height: 20%;
+    display: flex;
+    align-self: flex-end;
+    border: 2px solid black;
+}
+.center{
+    height: 20%;
+    display: flex;
+    align-self: center;
+    border: 2px solid black;
+}
+.baseline{
+    height: 20%;
+    display: flex;
+    align-self: baseline;
+    border: 2px solid black;
+
+}

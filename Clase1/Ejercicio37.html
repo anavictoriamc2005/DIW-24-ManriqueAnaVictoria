@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con dos botones que cambien el color del fondo de la página al pulsarlos.</title>
+</head>
+<body>
+    <form>
+        <input type="radio" id="morado" name="color" value="violet" onclick="cambiarFondo('morado')" >
+        <label for="morado">Morado</label><br>
+
+        <input type="radio" id="gris" name="color" value="grey" onclick="cambiarFondo('gris')">
+        <label for="gris">Gris</label><br>
+
+        <input type="radio" id="naranja" name="color" value="orange" onclick="cambiarFondo('naranja')" >
+        <label for="naranja">Naranja</label><br>
+    </form>
+
+    <script>
+        function cambiarFondo(nameBoton){
+            const boton = document.getElementById(nameBoton)
+            document.body.style.background = boton.value;  
+        }
+
+    </script>
+</body>
+</html>
