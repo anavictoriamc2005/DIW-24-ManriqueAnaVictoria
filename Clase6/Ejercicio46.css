@@ -1,0 +1,35 @@
+.grid-container{
+    display: grid;
+    background-color: lightblue;
+    text-align: center;
+    grid-template-columns: 100px 200px 200px;
+    grid-template-rows: 80px 50px 50px;
+    border:1px solid black;
+    gap:1px;
+    grid-template-areas: "celda1 celda1 celda1"
+                          "celda2 celda3 celda4"
+                          "celda2 celda5 celda6";
+}
+.uno{
+    border:1px solid black;
+    grid-area: celda1;
+
+}
+.dos{
+    border:1px solid black;
+    grid-area: celda2;
+   
+}
+.tres{
+    border:1px solid black;
+}
+.cuatro{
+    border:1px solid black;
+}
+.cinco{
+    border:1px solid black;
+}
+.seis{
+    border:1px solid black;
+    
+}

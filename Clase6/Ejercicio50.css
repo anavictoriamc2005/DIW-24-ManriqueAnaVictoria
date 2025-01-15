@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    background-color: lightblue;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 50px 50px;
+    border: 1px solid black;
+    gap: 1px; 
+    grid-template-areas: 
+        "celda2 celda3 celda4"
+        "celda5 celda6 celda1";
+}
+
+.uno {
+    border: 1px solid black;
+    grid-area: celda1; 
+}
+
+.dos {
+    border: 1px solid black;
+    grid-area: celda2;
+}
+
+.tres {
+    border: 1px solid black;
+    grid-area: celda3;
+}
+
+.cuatro {
+    border: 1px solid black;
+    grid-area: celda4;
+}
+
+.cinco {
+    border: 1px solid black;
+    grid-area: celda5;
+}
+
+.seis {
+    border: 1px solid black;
+    grid-area: celda6;
+}

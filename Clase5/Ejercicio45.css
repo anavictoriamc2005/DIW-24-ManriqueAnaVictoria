@@ -21,5 +21,5 @@
 
 /* Estilo para los hijos impares del contenedor */
 .contenedor div:nth-child(odd) {
-  background-color: rgb(221, 23, 23); /* Establece un color de fondo rojo para los elementos hijos con índices impares. */
+  background-color: rgb(2, 29, 104); /* Establece un color de fondo rojo para los elementos hijos con índices impares. */
 }
