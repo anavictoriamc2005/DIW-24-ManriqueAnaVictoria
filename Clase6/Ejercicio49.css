@@ -3,7 +3,7 @@
     background-color: lightblue;
     text-align: center;
     grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 80px 50px 60px;
+    grid-template-rows: 80px 80px 80px;
     border:1px solid black;
     gap:1px;
     grid-template-areas: ". celda1 celda1 "
