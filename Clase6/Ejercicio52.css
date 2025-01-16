@@ -28,22 +28,45 @@
 }
 .celda4{
     border: 1px solid black;
+    grid-area: celda4;
     display:grid;
-    grid-template-columns: 1fr 2fr ;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px  1fr 1fr; /*Ancho  de las celdas de la tabla*/
     grid-template-areas: 
-        "header "
-        "item2 item3 "
-        "item4 item5  ";
-    grid-area:header;
-    grid-area: item2;
-        
-
+       "header header "
+       "item2   item3"
+       "item4   item5";
+       gap: 1px;
+       text-align: center;
+       border: solid black 1px;
+       
     
 }
 .celda5{
     border: 1px solid black;
+    grid-area: celda5;
+    
 
+}
+.header{
+    border:1px solid black;
+    grid-area: header;
+}
+.item2{
+    border:1px solid black;
+    grid-area: item2;
+}
+.item3{
+    border:1px solid black;
+    grid-area: item3;
+}
+.item4{
+    border:1px solid black;
+    grid-area: item4;
+}
+.item5{
+    border:1px solid black;
+    grid-area: item5;
 }
 
 
