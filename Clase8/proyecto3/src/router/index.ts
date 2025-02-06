@@ -4,6 +4,7 @@ import Ejercicio from '../views/Ejercicio.vue'
 import Ejercicio6 from '../views/Ejercicio6.vue'
 import Ejercicio7 from '../views/Ejercicio7.vue'
 import Ejercicio8 from '../views/Ejercicio8.vue'
+import Ejercicio9 from '../views/Ejercicio9.vue'
 
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/ejercicio8',
       name: 'ejercicio8',
       component: Ejercicio8,
+    },
+    {
+      path: '/ejercicio9',
+      name: 'ejercicio9',
+      component: Ejercicio9,
     },
     {
       path: '/about',
